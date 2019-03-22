@@ -1,16 +1,19 @@
- import { Birthday } from './super-galactic-calculator';
+import Birthday  from './super-galactic-calculator.js';
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function() {
-  $('#galactic-age').submit(function(event) {
+  $('form#galactic-age').submit(function(event) {
     event.preventDefault();
-    let year = parseInt($("#birthyear").val());
-    let month = parseInt($("#birthmonth").val());
-    let day = parseInt($("#birthday").val());
-    let birthday = new Birthday(month,day,year);
-    console.log(birthday);
+    let year = $("input#birthyear").val();
+    // console.log(year);
+    let month = $("input#birthmonth").val();
+    // conosle.log(month);
+    let day = $("input#birthday").val();
+    // console.log(day);
+     let birthday = new Birthday(month,day,year);
+     $('#solution').text(birthday);
     });
   });

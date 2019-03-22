@@ -1,4 +1,4 @@
-export class Birthday {
+export default class Birthday {
   constuctor(month, day, year){
     this.month = month;
     this.day = day;
