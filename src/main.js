@@ -8,12 +8,11 @@ $(document).ready(function() {
   $('form#galactic-age').submit(function(event) {
     event.preventDefault();
     let year = $("input#birthyear").val();
-    // console.log(year);
     let month = $("input#birthmonth").val();
-    // conosle.log(month);
     let day = $("input#birthday").val();
-    // console.log(day);
      let birthday = new Birthday(month,day,year);
-     $('#solution').text(birthday);
+
+     let solution = birthday.birthdayToDate().getAge();
+     $('#solution').text(solution);
     });
   });

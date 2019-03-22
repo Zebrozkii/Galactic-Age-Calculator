@@ -1,4 +1,4 @@
-import { Birthday } from "./../src/super-galactic-calculator.js";
+import  Birthday  from "./../src/super-galactic-calculator.js";
 
 describe('Birthday', function(){
   it('should test to make sure constructor is getting right values', function() {
