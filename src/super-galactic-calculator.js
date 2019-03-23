@@ -14,5 +14,20 @@ export default class Birthday {
     const age = today - birthdate;
     return age;
   }
+  getAgeMercury(age){
+    return age * .24;
+  }
+  getAgeVenus(age){
+    return age * .62;
+  }
+  getAgeMars(age){
+    return age * 1.88;
+  }
+  getAgeJupiter(age){
+    return age * 11.86;
+  }
+  checkYearsLeft(age){
+    
+  }
 
 }
