@@ -1,4 +1,4 @@
-export default class Birthday {
+export class Birthday {
   constuctor(month, day, year){
     this.month = month;
     this.day = day;
@@ -15,19 +15,21 @@ export default class Birthday {
     return age;
   }
   getAgeMercury(age){
-    return age * .24;
+    age = age * .24;
+    return age;
   }
   getAgeVenus(age){
-    return age * .62;
+    age = age * .62;
+    return age;
   }
   getAgeMars(age){
-    return age * 1.88;
+    age = age * 1.88;
+    return age;
   }
   getAgeJupiter(age){
-    return age * 11.86;
-  }
-  checkYearsLeft(age){
-    
+
+    age = age * 11.86;
+    return age;
   }
 
 }

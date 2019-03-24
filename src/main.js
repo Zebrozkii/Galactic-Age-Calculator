@@ -1,4 +1,4 @@
-import Birthday  from './super-galactic-calculator.js';
+import { Birthday }  from './super-galactic-calculator.js';
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
@@ -11,8 +11,10 @@ $(document).ready(function() {
     let month = $("input#birthmonth").val();
     let day = $("input#birthday").val();
      let birthday = new Birthday(month,day,year);
-
-     let solution = birthday.birthdayToDate().getAge();
-     $('#solution').text(solution);
+     let age = Birthday.getAge(birthday);
+     let mercuryAge = Birthday.getAgeMercury(age);
+     let venusAge = Birthday.getAgeVenus(age);
+     let marsAge = Birthday.getAgeMars(age);
+     let jupiterAge = Birthday.getAgeJupiter(age);
     });
   });
