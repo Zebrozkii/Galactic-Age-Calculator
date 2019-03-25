@@ -10,11 +10,12 @@ $(document).ready(function() {
     let year = $("input#birthyear").val();
     let month = $("input#birthmonth").val();
     let day = $("input#birthday").val();
-     let birthday = new Birthday(month,day,year);
-     let age = Birthday.getAge(birthday);
-     let mercuryAge = Birthday.getAgeMercury(age);
-     let venusAge = Birthday.getAgeVenus(age);
-     let marsAge = Birthday.getAgeMars(age);
-     let jupiterAge = Birthday.getAgeJupiter(age);
+    let expectancy = $("input#lifeExpectancy").val();
+     let birthday = new Birthday(month,day,year,expectancy);
+     let age = Birthday.getAge();
+     let mercuryAge = Birthday.getAgeMercury();
+     let venusAge = Birthday.getAgeVenus();
+     let marsAge = Birthday.getAgeMars();
+     let jupiterAge = Birthday.getAgeJupiter();
     });
   });
