@@ -16,22 +16,37 @@
   }
 
   getAgeMercury(){
-    age = age * .24;
-    return Math.round(age);
+    let today = new Date();
+    let birthday = new Date(this.year,this.month,this.day);
+    let age = today - birthday;
+    age = age / 31536000000;
+    return Math.floor(age * .24);
+  }
+
+  getAgeVenus(){
+    let today = new Date();
+    let birthday = new Date(this.year,this.month,this.day);
+    let age = today - birthday;
+    age = age / 31536000000;
+    return Math.floor(age * .62);
+  }
+
+  getAgeMars(){
+    let today = new Date();
+    let birthday = new Date(this.year,this.month,this.day);
+    let age = today - birthday;
+    age = age / 31536000000;
+    return Math.floor(age * 1.88);
+  }
+
+  getAgeJupiter(){
+    let today = new Date();
+    let birthday = new Date(this.year,this.month,this.day);
+    let age = today - birthday;
+    age = age / 31536000000;
+    return Math.floor(age * 11.86);
   }
 }
-  // getAgeVenus(age){
-  //   this.age = age * .62;
-  //   return Math.round(age);
-  // }
-  // getAgeMars(age){
-  //   this.age = age * 1.88;
-  //   return Math.round(age);
-  // }
-  // getAgeJupiter(age){
-  // this.age = age * 11.86;
-  //   return Math.round(age);
-  // }
   // mercYearsLeft(age,lifeExpectancy){
   //
   // }
