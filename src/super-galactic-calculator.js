@@ -1,54 +1,32 @@
- class  User {
+  export default class  User {
   constructor(year,month,day,lifeExpectancy){
     this.year = year;
     this.month = month;
     this.day = day;
     this.lifeExpectancy = lifeExpectancy;
-
+     let today = new Date();
+     let birthday = new Date(this.year,this.month,this.day);
+       let age = today - birthday;
+       age = age / 31536000000;
+        age =  Math.floor(age);
+        this.age = age;
   }
-   getAge(){
-    let today = new Date();
-    let birthday = new Date(this.year,this.month,this.day);
-      let age = today - birthday;
-      age = age / 31536000000;
-       age =  Math.floor(age);
-      return age;
-  }
-
   getAgeMercury(){
-    let today = new Date();
-    let birthday = new Date(this.year,this.month,this.day);
-    let age = today - birthday;
-    age = age / 31536000000;
-    return Math.floor(age * .24);
+    return Math.floor(this.age * .24);
   }
 
   getAgeVenus(){
-    let today = new Date();
-    let birthday = new Date(this.year,this.month,this.day);
-    let age = today - birthday;
-    age = age / 31536000000;
-    return Math.floor(age * .62);
+    return Math.floor(this.age * .62);
   }
 
   getAgeMars(){
-    let today = new Date();
-    let birthday = new Date(this.year,this.month,this.day);
-    let age = today - birthday;
-    age = age / 31536000000;
-    return Math.floor(age * 1.88);
+    return Math.floor(this.age * 1.88);
   }
 
   getAgeJupiter(){
-    let today = new Date();
-    let birthday = new Date(this.year,this.month,this.day);
-    let age = today - birthday;
-    age = age / 31536000000;
-    return Math.floor(age * 11.86);
+    return Math.floor(this.age * 11.86);
   }
 }
   // mercYearsLeft(age,lifeExpectancy){
   //
   // }
-
-}

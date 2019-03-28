@@ -16,6 +16,24 @@ describe('User', function(){
   });
   it('should test to make sure its returning the right age', function(){
     let birthday = new User("1995","04","01","0");
-    expect(birthday.getAge()).toEqual(23);
-  })
+    expect(birthday.age).toEqual(23);
+  });
+  it('should test to make sure its returning Mercury age', function(){
+    let birthday = new User("1995","04","01","0");
+    expect(birthday.getAgeMercury()).toEqual(5);
+  });
+  it('should test to make sure its returning Venus age', function(){
+    let birthday = new User("1995","04","01","0");
+    expect(birthday.getAgeVenus()).toEqual(14);
+  });
+  it('should test to make sure its returning Mars age', function(){
+    let birthday = new User("1995","04","01","0");
+    expect(birthday.getAgeMars()).toEqual(43);
+  });
+  it('should test to make sure its returning Mars age', function(){
+    let birthday = new User("1995","04","01","0");
+    expect(birthday.getAgeJupiter()).toEqual(272);
+  });
+
+
 });
