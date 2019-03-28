@@ -12,6 +12,6 @@ $(document).ready(function() {
     let day = parseInt($("input#day").val());
     let lifeExpectancy = parseInt($("input#lifeExpectancy").val());
     let userInput = new User(year,month,day,lifeExpectancy);
-    console.log(userInput);
+    userInput.getAge();
     });
   });
