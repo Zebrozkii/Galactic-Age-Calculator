@@ -31,6 +31,6 @@
 * karma
 
 ### GitHub Pages link
-
+https://github.com/Zebrozkii/Galactic-Age-Calculator
 
 Copyright (c) 2019 Jimmy Zebroski.
