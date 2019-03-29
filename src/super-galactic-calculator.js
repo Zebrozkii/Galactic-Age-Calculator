@@ -26,7 +26,20 @@
   getAgeJupiter(){
     return Math.floor(this.age * 11.86);
   }
+
+  mercYearsLeft(){
+    let mercAge = Math.floor(this.age * .24);
+    let mercLife = Math.floor(this.lifeExpectancy * .24);
+    if(mercAge>mercLife){
+    let yearsPast = mercAge - mercLife;
+    console.log(yearsPast);
+      return "You are " + yearsPast + " past your death ";
+    }
+    else {
+      let yearsLeft = mercLife - mercAge;
+      console.log(yearsLeft);
+      return "you still have " + yearsLeft + " years to live on mercury ";
+    }
+
+  }
 }
-  // mercYearsLeft(age,lifeExpectancy){
-  //
-  // }
