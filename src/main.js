@@ -17,11 +17,20 @@ $(document).ready(function() {
     let venAge = userInput.getAgeVenus();
     let marAge = userInput.getAgeMars();
     let jupAge = userInput.getAgeJupiter();
+    let merYearsLeft = userInput.mercYearsLeft();
+    let venusYearsLeft = userInput.venYearsLeft();
+    let marYearsLeft = userInput.marYearsLeft();
+    let jupYearsLeft = userInput.jupYearsLeft();
     $("#solution").text("you are " + age + " years old");
     $("#mercuryYears").text("you are " + mercAge + " years old on Mercury");
     $("#venusYears").text("you are " + venAge + " years old on Venus");
     $("#marsYears").text("you are " + marAge + " years old on Mars");
-      $("#jupiterYears").text("you are " + jupAge + " years old on Jupiter");
+    $("#jupiterYears").text("you are " + jupAge + " years old on Jupiter");
+    $("#mercYearsLeft").text(merYearsLeft);
+    $("#venYearsLeft").text(venusYearsLeft);
+    $("#marsYearsLeft").text(marYearsLeft);
+    $("#jupYearsLeft").text(jupYearsLeft);
+
 
     });
   });

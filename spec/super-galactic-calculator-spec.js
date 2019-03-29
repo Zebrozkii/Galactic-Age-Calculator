@@ -34,6 +34,21 @@ describe('User', function(){
     let birthday = new User("1995","04","01","0");
     expect(birthday.getAgeJupiter()).toEqual(272);
   });
-
+  it('should test to make sure its returning mercury years left', function(){
+    let birthday = new User("1995","04","01","80");
+    expect(birthday.mercYearsLeft()).toEqual("you still have 14 years to live on mercury ");
+  });
+  it('should test to make sure its returning venus  years left', function(){
+    let birthday = new User("1995","04","01","80");
+    expect(birthday.venYearsLeft()).toEqual("you still have 35 years to live on Venus ");
+  });
+  it('should test to make sure its returning mars years left', function(){
+    let birthday = new User("1995","04","01","80");
+    expect(birthday.marYearsLeft()).toEqual("you still have 107 years to live on Mars ");
+  });
+  it('should test to make sure its returning Jupiter years left', function(){
+    let birthday = new User("1995","04","01","80");
+    expect(birthday.jupYearsLeft()).toEqual("you still have 676 years to live on Jupiter ");
+  });
 
 });
