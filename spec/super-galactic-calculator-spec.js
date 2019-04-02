@@ -36,7 +36,7 @@ describe('User', function(){
   });
   it('should test to make sure its returning mercury years left', function(){
     let birthday = new User("1995","04","01","80");
-    expect(birthday.mercYearsLeft()).toEqual("you still have 14 years to live on mercury ");
+    expect(birthday.mercYearsLeft()).toEqual("you still have 14 years to live on Mercury ");
   });
   it('should test to make sure its returning venus  years left', function(){
     let birthday = new User("1995","04","01","80");
