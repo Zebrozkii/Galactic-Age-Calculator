@@ -5,10 +5,22 @@
  A web application that gets the users age and tells them how old they would be on each planet.
 
 ## Specifications
--Input :Takes users age and total life expectancy.
--Output : Users age if they lived on different planets of the solar system.
--Output : Users remaining years left alive on all planets.
--Output : if user lived past total expected life or not.
+* User can enter birthday and gets back their age in Mercury years
+* > Input: Enter the year you were born: 1995
+* > Input:Enter the month you were born: 04
+* > Input: Enter the day of the month you were born:01
+* > Input: Enter the age you think you will die: 80
+* > Output: You are 23 years old
+* > Output: You are 5 years old on Mercury
+* > Output: You Have 14 years to live on Mercury
+* > Output: You are 14 years old on Venus
+* > Output: You have 35 years to live on Venus
+* > Output: You are 43 years old on Mars
+* > Output: You have 107 years to live on Mars
+* > Output: You are 272 years old on
+Jupiter
+* > Output: You still have 676 years to live on Jupiter
+
 
 ### Setup Instructions
 * Install Node.js
